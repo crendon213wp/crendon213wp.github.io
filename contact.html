@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/application.css">
+    <title>213 Creative Tech, LLC | Contact Page</title>
+  </head>
+  <body>
+
+    <section class="first-section">
+      <div class="container-fluid py-5">
+        <div class="row">
+          <div class="col text-center header">
+              <h1><a href="index.html" class="text-decoration-none">213 Creative Tech, LLC</a></h1>
+              <hr class="hr-1">
+              <h5>Computer Repair, Web Development &amp; IT</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="animsition" id="navigation">
+      <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+        <!-- <a class="navbar-brand" href="#"></a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item px-md-5">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-md-5">
+              <a class="nav-link" href="code.html">Code</a>
+            </li>
+            <li class="nav-item px-md-5">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item active px-md-5">
+              <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <section id="contact">
+      <div class="container pt-3 pb-5">
+        <h1 class="text-center pt-5">Contact</h1>
+        <hr class="hr-1 py-4">
+        <div class="row">
+          <div class="col-md-6">
+            <img v-bind:src="img.src" class="img-fluid" v-bind:alt="img.alt">
+          </div>
+          <div class="col-md-6">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="firstname">First Name *</label>
+                  <input type="firstname" class="form-control" id="firstname" placeholder="First name" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="lastname">Last Name *</label>
+                  <input type="lastname" class="form-control" id="lastname" placeholder="Last name" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="email">Email * </label>
+                  <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="message">Message *</label>
+                  <textarea class="form-control" id="message" rows="3" placeholder="Please write message in here regarding your inquiries." required></textarea>
+                </div>
+                <button class="btn btn-outline-light btn-block" type="submit">Submit form</button>
+            </form>
+
+            <!-- <script>
+              // Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.getElementsByClassName('needs-validation');
+                  // Loop over them and prevent submission
+                  var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+            </script> -->
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+      <i class="fas fa-arrow-down"></i>
+    </button>
+
+    <section id="footer">
+      <div class="container-fluid py-3">
+        <div class="row">
+          <div class="col-md-6 text-md-right text-sm-center py-3" id="social-media">
+            <a href="https://www.facebook.com/ciscorendonWP"  target="_blank">
+              <i class="fab fa-facebook fa-3x"></i>
+            </a>
+          </div>
+          <div class="col-md-6 text-md-left text-sm-center py-3" id="social-media">
+            <a href="https://www.instagram.com/crendon213wp/" target="_blank">
+              <i class="fa-icon fab fa-instagram fa-3x"></i>
+            </a>
+          </div>
+        </div>
+        <hr class="hr-2">
+        <div class="row">
+          <div class="col text-center">
+            <span v-html="message"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+      <script src="js/bundle.min.js"></script>
+     
+    </body>
+  </html>
